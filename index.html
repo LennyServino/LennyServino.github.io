@@ -1,22 +1,156 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio LS</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <!-- Menu Encabezado -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#"><img src="img/logo4.png" alt=""></a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobremi">Sobre mi</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#curriculum">Curriculum</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Seccion de inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenedor-banner">
+            <div class="contenedor-img">
+                <img src="img/usuario.png" alt="">
+            </div>
+            <h1>Lenny Servino</h1>
+            <h2>Técnico en Ingenieria de Software</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </section>
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1 class="text-center mt-5 display-4 text-primary">Hello, world!</h1>
+    <!-- Seccion sobre mi -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-section">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Lenny Servino.</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eveniet corrupti aspernatur ratione atque unde voluptatum fugit, obcaecati quod corporis sed omnis architecto reprehenderit debitis placeat voluptates sit praesentium repellendus!</p>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+            <div class="fila">
+                <!-- Datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Edad</strong>
+                            22 años.
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            0000-0000
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            LS_Software@gmail.com
+                        </li>
+                        <li>
+                            <strong>Lugar de residencia</strong>
+                            San Salvador, El Salvador.
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Freelance</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-play"></i>
+                            <span>PELICULAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-android"></i>
+                            <span>ANDROID</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Seccion Skills -->
+    <section id="Skills" class="skills">
+        <div class="contenido-section">
+            <h2>Skills</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="contenedor-skills">
+                        <div class="skill">
+                            <img src="img/html5.png" alt="">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill">
+                            <img src="img/css3.png" alt="">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill">
+                            <img src="img/javascript.png" alt="">
+                            <span>JAVASCRIPT</span>
+                        </div>
+                        <div class="skill">
+                            <img src="img/PHP-logo.png" alt="">
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill">
+                            <img src="img/mysql-logo.png" alt="">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill">
+                            <img src="img/Bootstrap_logo.png" alt="">
+                            <span>BOOTSTRAP</span>
+                        </div>
+                        <div class="skill">
+                            <img src="img/git_logo.png" alt="">
+                            <span>GIT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
