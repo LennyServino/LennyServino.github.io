@@ -300,6 +300,7 @@ html{
 .portafolio .galeria .proyecto img{
     width: 100%;
     display: block;
+    border-radius: 10px;
 }
 .portafolio .galeria .proyecto .overlay{
     position: absolute;
@@ -315,6 +316,7 @@ html{
     font-size: 18px;
     letter-spacing: 3px;
     opacity: 0;
+    border-radius: 10px;
 }
 .portafolio .galeria .proyecto .overlay h3{
     margin-bottom: 20px;
@@ -455,6 +457,12 @@ footer .arriba{
     nav.responsive ul li{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
+        border-radius: 2px;
+    }
+    .portafolio .galeria .proyecto .overlay{
+        background: linear-gradient(rgba(174, 214, 241,.6), rgba(174, 214, 241,.8));
+        opacity: 1;
+        border-radius: 10px;
     }
 }
 @media screen and (max-width:700px){
@@ -476,6 +484,16 @@ footer .arriba{
     .sobremi .fila .col{
         width: fit-content;
         margin: auto;
+    }
+    .sobremi .fila .col .contenedor-intereses .interes{
+        width: 200px;
+        height: 200px;
+        margin: 10px auto;
+    }
+    .sobremi .fila .col ul li strong{
+        display: inline-flex;
+        color: #42A5F5;
+        width: 130px;
     }
     .skills .fila{
         display: block;
@@ -500,6 +518,85 @@ footer .arriba{
     .portafolio .galeria .proyecto img{
         width: 100%;
         margin: 20px auto;
+        border-radius: 10px;
+    }
+    .portafolio .galeria .proyecto .overlay{
+        background: linear-gradient(rgba(174, 214, 241,.6), rgba(174, 214, 241,.8));
+        opacity: 1;
+        border-radius: 10px;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}
+@media screen and (max-width:415px){
+    .inicio{
+        margin: auto;
+        display: flex;
+        padding-top: 5%;
+        height: 91vh;
+    }
+    .sobremi{
+        background-color: #1e2326;
+        color: #fff;
+        padding: 75px 20px;
+    }
+    .sobremi .fila{
+        display: block;
+        margin: auto;
+    }
+    .sobremi .fila h3{
+        text-align: center;
+    }
+    .sobremi p{
+        text-align: justify;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+        margin: auto;
+        padding-top: 40px;
+    }
+    .sobremi .fila .col .contenedor-intereses .interes{
+        width: 200px;
+        height: 200px;
+        margin: 10px auto;
+    }
+    .sobremi .fila .col ul li strong{
+        display: inline-block;
+        color: #42A5F5;
+        width: 35%;
+    }
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .contenedor-skills{
+        width: 100%;
+        margin: auto;
+    }
+    .skills .fila .col .contenedor-skills .skill{
+        width: 60%;
+    }
+    .portafolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portafolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portafolio .galeria .proyecto img{
+        width: 100%;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+    .portafolio .galeria .proyecto .overlay{
+        background: linear-gradient(rgba(174, 214, 241,.6), rgba(174, 214, 241,.8));
+        opacity: 1;
         border-radius: 10px;
     }
     .contacto .fila{
