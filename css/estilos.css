@@ -137,7 +137,9 @@ html{
 .sobremi .contenido-section p{
     font: 18px;
     line-height: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    width: 85%;
+    margin: 0 auto 40px;
 }
 .sobremi .contenido-section p span{
     color: #42A5F5;
@@ -468,6 +470,12 @@ footer .arriba{
     .inicio{
         background: linear-gradient(to top, rgba(30,35,38,1), rgba(30,35,38,.6)),
         url(../img/j3.jpeg);
+    }
+    .sobremi .contenido-section p{
+        font: 18px;
+        line-height: 22px;
+        margin-bottom: 40px; 
+        width: 100%;
     }
     .portafolio .galeria .proyecto .overlay{
         background: linear-gradient(rgba(174, 214, 241,.6), rgba(174, 214, 241,.8));
