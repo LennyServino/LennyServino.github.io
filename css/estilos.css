@@ -68,8 +68,8 @@ html{
 
 /* Seccion INICIO */
 .inicio{
-    background: linear-gradient(to top, rgba(30,35,38,1), rgba(30,35,38,.7)),
-    url(../img/j3.jpeg);
+    background: linear-gradient(to top, rgba(30,35,38,1), rgba(30,35,38,.2)),
+    url(../img/fondo3.jpg);
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -468,8 +468,11 @@ footer .arriba{
         display: block;
     }
     .inicio{
-        background: linear-gradient(to top, rgba(30,35,38,1), rgba(30,35,38,.6)),
-        url(../img/j3.jpeg);
+        background: linear-gradient(to top, rgba(30,35,38,1), rgba(30,35,38,.4)),
+        url(../img/fondo3.jpg);
+        background-size: cover;
+        height: 100vh;
+        color: #fff;
     }
     .sobremi .contenido-section p{
         font: 18px;
