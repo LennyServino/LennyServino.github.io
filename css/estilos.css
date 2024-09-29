@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 
+:root{
+    --color-primario: #1e2326;
+    --color-secundario: #42A5F5;
+}
+
 *{
     box-sizing: border-box;
     font-family: 'Work Sans';
@@ -71,6 +76,7 @@ html{
     background: linear-gradient(to top, rgba(30,35,38,1), rgba(30,35,38,.2)),
     url(../img/fondo3.jpg);
     background-size: cover;
+    background-color: var(--color-secundario);
     height: 100vh;
     color: #fff;
     display: flex;
@@ -86,7 +92,7 @@ html{
 }
 .inicio .contenedor-banner img{
     margin-top: 40px;
-    border: 10px solid #42A5F5;
+    border: 5px solid #42A5F5;
     display: block;
     width: 80%;
     margin: auto;
@@ -136,9 +142,9 @@ html{
 }
 .sobremi .contenido-section p{
     font: 18px;
-    line-height: 22px;
+    line-height: 1.8rem;
     margin-bottom: 40px;
-    width: 85%;
+    width: 100%;
     margin: 0 auto 40px;
 }
 .sobremi .contenido-section p span{
@@ -147,9 +153,14 @@ html{
 }
 .sobremi .fila{
     display: flex;
+    margin-top: 6rem;
 }
 .sobremi .fila .col{
     width: 50%;
+}
+
+.sobremi .fila .col:last-child{
+    padding: 0 0 0 5rem;
 }
 .sobremi .fila .col h3{
     font-size: 28px;
@@ -196,6 +207,11 @@ html{
     font-size: 30px;
     margin-bottom: 10px;
 }
+
+.sobremi a {
+    text-decoration: none;
+}
+
 .sobremi button{
     cursor: pointer;
     background-color: transparent;
@@ -295,22 +311,53 @@ html{
 .portafolio .galeria .proyecto{
     position: relative;
     max-width: 340px;
-    height: fit-content;
+    height: 200px;
     margin: 10px;
     cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255,255,255,.5);
 }
+
 .portafolio .galeria .proyecto img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
     border-radius: 10px;
+    
 }
+
+.portafolio .galeria .proyecto .overlay .btn {
+    padding: 1rem;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.portafolio .galeria .proyecto .overlay .btn:hover {
+    background-color: var(--color-secundario);
+}
+
+.enlaces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
 .portafolio .galeria .proyecto .overlay{
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(174, 214, 241,.8), rgba(174, 214, 241,.8));
+    background: rgba(0, 0, 0, 0.7);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -320,14 +367,19 @@ html{
     opacity: 0;
     border-radius: 10px;
 }
-.portafolio .galeria .proyecto .overlay h3{
+
+.portafolio .galeria .proyecto .overlay p{
+    font-weight: 500;
     margin-bottom: 20px;
     transition: 1s;
+    font-size: 1rem;
 }
+
 .portafolio .galeria .proyecto .overlay:hover{
     opacity: 1;
 }
-.portafolio .galeria .proyecto .overlay:hover h3{
+
+.portafolio .galeria .proyecto .overlay:hover p{
     margin-bottom: 0px;
 }
 
